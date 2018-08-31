@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Testing Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="gameBoard.js"></script>
+    <script src="players.js"></script>
+    <script src="weapons.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="flex1">
+        <div>
+            <h4>Gun</h4>
+            <img src='images/gun.png' alt="Gun Weapon">
+            <p>Damage Point: 20</p>
+        </div>
+        <div>
+            <h4>Wand</h4>
+            <img src='images/wand.png' alt="Wand Weapon">
+            <p>Damage Point: 30</p>
+        </div>
+        <div>
+            <h4>Hammer</h4>
+            <img src='images/hammer.png' alt="Hammer Weapon">
+            <p>Damage Point: 40</p>
+        </div>
+        <div>
+            <h4>Quiver</h4>
+            <img src='images/quiver.png' alt="Quiver Weapon">
+            <p>Damage Point: 50</p>
+        </div>
+    </div>
+    
+    <div class='flex-container'>
+        <div id='player1'>
+            <h3>SHERIFF</h3>
+            <div class='playerImage'>
+                <img src='images/sprint.png' alt='Player Sheriff'>
+                <p id='sheriffHealth'>Health Point: 100</p>
+            </div>
+            <div class='weaponImage'>
+                <h3>Weapon</h3>
+                <img id='sheriffWeapon' src='images/spray.png' alt='Player Weapon'>
+                <p id='sheriffWeaponDamage'>Damage Point: 10</p>
+            </div>
+            <div id="sheriffButtons">
+                <button class='attack'>Attack</button>
+                <button class='defend'>Defend</button>
+            </div>
+            <div id='sheriffStatus'></div>
+        </div>
+        <div id='board'></div>
+        <div id='player2'>
+            <h3>CRIMINAL</h3>
+            <div class="playerImage">
+                <img src='images/robber.png' alt='Player Criminal'>
+                <p id='criminalHealth'>Health Point: 100</p>
+            </div>
+            <div class='weaponImage'>
+                <h3>Weapon</h3>
+                <img id='criminalWeapon' src='images/spray.png' alt='Player Weapon'>
+                <p id='criminalWeaponDamage'>Damage Point: 10</p>
+            </div>
+            <div id="criminalButtons">
+                <button class='attack'>Attack</button>
+                <button class='defend'>Defend</button>
+            </div>
+            <div id='criminalStatus'></div>
+        </div>
+    </div>
+</body>
+</html>

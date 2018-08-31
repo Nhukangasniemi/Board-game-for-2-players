@@ -1,0 +1,141 @@
+body {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.flex1 div {
+    margin: 20px;
+}
+
+#board {
+    background: #008080;
+    padding: 5px;
+    
+}
+
+h3 {
+    color: #fdffb4;
+}
+
+h4 {
+    color: #008080;
+}
+
+#player1, #player2 {
+    width: 230px;
+    height: 620px;
+    background: rgb(144, 99, 54, 0.8);
+    font-size: 1.4em;
+    color: whitesmoke;
+}
+
+img {
+    width: 120px;
+    height: 110px;
+
+}
+
+.playerImage, .weaponImage, #sheriffButtons, #criminalButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    color: whitesmoke;
+    font-size: 1.2em;
+    border: 1px solid black;
+    width: 120px;
+    margin: 3px;
+}
+
+#criminalStatus, #sheriffStatus {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fdffb4;
+}
+
+.attack {
+    background: rgb(252, 152, 58);
+}
+
+.defend {
+    background: #12c9c0;
+}
+
+
+.col, .obstacle {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-color: #fdffb4; 
+    border-radius: 10%;
+    margin: 3px;
+  }
+
+#sheriff {
+    background: url('images/sprint.png');
+}
+
+#criminal {
+    background: url('images/robber.png');
+}
+
+.obstacle {
+    background: url('images/obstacle.png');
+}
+
+[type='spray'] {
+    background: url('images/spray.png');
+}
+
+[type='gun'] {
+    background: url('images/gun.png');
+}
+
+[type='wand'] {
+    background: url('images/wand.png');
+}
+
+[type='hammer'] {
+    background: url('images/hammer.png');
+}
+
+[type='quiver'] {
+    background: url('images/quiver.png');
+}
+
+.highlight {
+    border: 0.8px dashed #d128b5;
+    opacity: 0.8;
+}
+
+.mouseOversheriff {
+    background: url('images/sprint.png');
+    opacity: 0.6;
+}
+
+.mouseOvercriminal {
+    background: url('images/robber.png');
+    opacity: 0.6;
+}
+
+#sheriff, #criminal, .obstacle, [type='spray'], [type='gun'], [type='wand'], [type='hammer'], [type='quiver'], .mouseOversheriff, .mouseOvercriminal{
+    background-size: 65px 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
